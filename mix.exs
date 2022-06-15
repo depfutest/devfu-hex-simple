@@ -1,6 +1,8 @@
 defmodule BumpTest.MixProject do
   use Mix.Project
 
+  @version File.read!("version.txt") |> String.trim()
+
   def project do
     [
       app: :bump_test,
